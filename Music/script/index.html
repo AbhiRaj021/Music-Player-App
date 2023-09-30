@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name ="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Music Player </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/29d98aa147.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                    
+                </div>
+            </nav>
+            <img src="Not_Ramaiya_Vastavaiya_Extended_Version.avif" class="song-img">
+            <h1> Ramaiya Vastavaiya</h1>
+            <p>	Varun Jain, & Sachin Jigar</p>
+
+            <audio id="song">
+                <source src="Not Ramaiya Vastavaiya Jawan 320 Kbps.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+
+            <div class="controls">
+                <div><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
